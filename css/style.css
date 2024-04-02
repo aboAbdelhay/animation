@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ccc;
+}
+.boxes {
+  position: relative;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background-color: red;
+  text-align: center;
+  border-radius: 50%;
+}
+.box p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+.box1 {
+  left: 0;
+  animation: one 2s forwards linear;
+}
+.box2 {
+  right: 0;
+  animation: two 2s 2s forwards linear;
+}
+.box3 {
+  left: 0;
+  top: 150px;
+  animation: one 2s 4s forwards linear;
+}
+.box4 {
+  right: 0;
+  top: 150px;
+  animation: two 2s 6s forwards linear;
+}
+.box5 {
+  left: 0;
+  top: 300px;
+  animation: one 2s 8s forwards linear;
+}
+.box6 {
+  right: 0;
+  top: 300px;
+  animation: two 2s 10s forwards linear;
+}
+.box7 {
+  left: 0;
+  top: 450px;
+  animation: one 2s 12s forwards linear;
+}
+.box8 {
+  right: 0;
+  top: 450px;
+  animation: two 2s 14s forwards linear;
+}
+@keyframes one {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 93%;
+  }
+}
+
+@keyframes two {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: 93%;
+  }
+}
